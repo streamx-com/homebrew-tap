@@ -1,0 +1,25 @@
+# Homebrew
+*.bottle.*
+*.cellar
+.brew_home
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Editors and IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+.atom/
+.eclipse/
+.nb-gradle/
+nbproject/
