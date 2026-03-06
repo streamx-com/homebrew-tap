@@ -1,27 +1,27 @@
-# Generated with JReleaser 1.22.0 at 2026-03-06T10:16:32.505468435Z
+# Generated with JReleaser 1.22.0 at 2026-03-06T10:16:41.600027497Z
 require_relative "../download_strategy"
 
 class Streamx < Formula
   desc "StreamX CLI"
   homepage "https://github.com/streamx-com/streamx-cli"
-  version "0.0.42"
+  version "0.0.41"
   license "LicenseRef-StreamX"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/0.0.42/streamx-0.0.42-linux-aarch64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "ee57eaa0cecee64377e6170e094bc8ce6acb5ddad0cdd5c7faa93aefbae984c9"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/0.0.41/streamx-0.0.41-linux-aarch64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "c4812bb156da1e73904d7d6a047e675e7e53e79219c427feba0ca911da7c47fe"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/0.0.42/streamx-0.0.42-linux-x86_64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "16a63b4916c61c3bb03619bc3ec25ab36b3335033c5b482c14c8fb6e405da785"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/0.0.41/streamx-0.0.41-linux-x86_64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "a9f49b98ad32cc7318c2480a509b8b653d94d8a26711af7a876b849e8b484912"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/0.0.42/streamx-0.0.42-macos-aarch64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "d310dea7cb0f75206a65453aed9572c1c174397ac6cbfdd9c6aca2d910fae562"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/0.0.41/streamx-0.0.41-macos-aarch64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "0f1be6b5f71aa8ef41968eec5bebdba4e994203055b631b44c7528f04b25c220"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/0.0.42/streamx-0.0.42-macos-x86_64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
-    sha256 "109cd5008a18e4daf7e783db199a1e15a925de6f74af2c3ce32623382404d4c0"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/0.0.41/streamx-0.0.41-macos-x86_64.zip", :using => GitHubPrivateRepositoryReleaseDownloadStrategy
+    sha256 "426b642ebed3d91cb2c190bb7e47852eb2570f92fd045d5972081bda97d178f7"
   end
 
 
@@ -32,6 +32,6 @@ class Streamx < Formula
 
   test do
     output = shell_output("#{bin}/streamx --version")
-    assert_match "0.0.42", output
+    assert_match "0.0.41", output
   end
 end
