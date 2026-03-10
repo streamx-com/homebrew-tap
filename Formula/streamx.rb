@@ -1,26 +1,26 @@
-# Generated with JReleaser 1.22.0 at 2026-03-10T11:23:28.215575702Z
+# Generated with JReleaser 1.22.0 at 2026-03-10T11:58:05.14006951Z
 
 class Streamx < Formula
   desc "StreamX CLI"
   homepage "https://github.com/streamx-com/streamx-cli"
-  version "0.5.4"
+  version "0.5.5"
   license "LicenseRef-StreamX"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/0.5.4/streamx-0.5.4-linux-aarch64.zip"
-    sha256 "d3e2bbd44fd3d34fcbb501501eb82889f60583b43152fb5c6385b1a422e861df"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/0.5.5/streamx-0.5.5-linux-aarch64.zip"
+    sha256 "8496aa2338071386a9f28ae63e53445d5c2eed89fb4a6df7ac4e1dbd33bd5ed3"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/0.5.4/streamx-0.5.4-linux-x86_64.zip"
-    sha256 "9b5f36a3be6638a1d8a62b61221be7e2e98864c4d76346e08baecc538ee93799"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/0.5.5/streamx-0.5.5-linux-x86_64.zip"
+    sha256 "393fa2ec377bf39f4314f420dc34cc8a35e2aa1de25179eab57024fc4ae063ba"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/0.5.4/streamx-0.5.4-macos-aarch64.zip"
-    sha256 "008bc56756157abbd06dfa8c0fc2ed1ca13cedf0d86dcc9994c701411eabdd6b"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/0.5.5/streamx-0.5.5-macos-aarch64.zip"
+    sha256 "57e1c1bc438e6b8bf181a4cc55f40edcb5a8ed399cff54c860c844c56ecda863"
   end
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/0.5.4/streamx-0.5.4-macos-x86_64.zip"
-    sha256 "28bfe5a5097fe2206b8bd00016ee9c4e5105dc4f5e5aafd34e53e48c44f71ec7"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/0.5.5/streamx-0.5.5-macos-x86_64.zip"
+    sha256 "2e7505fa4dcae85cf72fbaf1dd215d27b43937b46782b5fefe3c572662739234"
   end
 
 
@@ -31,6 +31,6 @@ class Streamx < Formula
 
   test do
     output = shell_output("#{bin}/streamx --version")
-    assert_match "0.5.4", output
+    assert_match "0.5.5", output
   end
 end
