@@ -1,26 +1,22 @@
-# Generated with JReleaser 1.22.0 at 2026-04-29T15:54:28.376530447Z
+# Generated with JReleaser 1.22.0 at 2026-09-24T07:42:59.664283112Z
 
 class Streamx < Formula
   desc "StreamX CLI"
   homepage "https://github.com/streamx-com/streamx-cli"
-  version "2.0.3"
+  version "2.1.0"
   license "LicenseRef-StreamX"
 
   if OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/2.0.3/streamx-2.0.3-linux-aarch64.zip"
-    sha256 "266f8a610c76b628f894ee66d2376c526c515f6492962aa98428781ae83c9708"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/2.1.0/streamx-2.1.0-linux-aarch64.zip"
+    sha256 "aa082ce8303d3668934e229560ee8bd24ca0fb984f759424da37b4fb39902027"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/2.0.3/streamx-2.0.3-linux-x86_64.zip"
-    sha256 "3b28080f84fc3c0c07a5eb2d0c311dcd398f0b4da3b908e897a8fd8cbfb13680"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/2.1.0/streamx-2.1.0-linux-x86_64.zip"
+    sha256 "a39b7acdd0f42996890d7532ad6ea693df4903dede556ed959d2baf431138ece"
   end
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/2.0.3/streamx-2.0.3-macos-aarch64.zip"
-    sha256 "83971315bcfa746cf42429a654483e516144b073473178503405f7b1ff8e2b31"
-  end
-  if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/streamx-com/streamx-cli/releases/download/2.0.3/streamx-2.0.3-macos-x86_64.zip"
-    sha256 "a2478f4566cee1fcb6c6edf59415c33cdb94b4151e47ccd9bf6ce283bf2b6948"
+    url "https://github.com/streamx-com/streamx-cli/releases/download/2.1.0/streamx-2.1.0-macos-aarch64.zip"
+    sha256 "5499d56f2e4a172e7cde58ed107555a3589e78d8a896e99b5edad3863b27b8a3"
   end
 
 
@@ -35,6 +31,6 @@ class Streamx < Formula
 
   test do
     output = shell_output("#{bin}/streamx --version")
-    assert_match "2.0.3", output
+    assert_match "2.1.0", output
   end
 end
